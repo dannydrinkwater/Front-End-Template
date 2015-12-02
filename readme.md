@@ -37,11 +37,11 @@ A sample `robots.txt` file is also included for convenience.
 
 ### .bowerrc
 
-Ensures that your bower dependencies are organised nicely in the `vendor` directory, along with any Composer dependencies.
+Ensures that your bower dependencies are placed in the `vendor` directory.
 
 ### .gitattributes
 
-Settings to normalise line endings within the Git repository.
+Normalise line endings within the Git repository.
 
 ### .gitignore
 
@@ -53,11 +53,6 @@ If there isn't a global .gitignore file setup, here are some example additional 
 	.DS_Store
 	.DS_Store?
 	Thumbs.db
-
-	# Web
-	/.idea
-	composer.lock
-	composer.phar
 
 ### Gruntfile.js
 
