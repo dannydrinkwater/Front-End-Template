@@ -7,7 +7,7 @@ Create a new directory
 
 Open a terminal window, navigate to the new directory and run:
 
-`git clone git@bitbucket.org:club/mobilitychoices-frontend.git .`
+`git clone https://github.com/dannydrinkwater/Project-Template.git .`
 
 Install Grunt modules:
 
