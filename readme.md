@@ -33,6 +33,8 @@ Ensure that your server webroot points to this directory.
 
 A sample `robots.txt` file is also included for convenience.
 
+A sample `crossdomain.xml` file is also included for convenience.
+
 ## Metafiles
 
 ### .bowerrc
