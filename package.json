@@ -1,0 +1,27 @@
+{
+  "name": "ProjectTitle",
+  "version": "0.4.2",
+  "author": "Danny Drinkwater",
+  "main": "",
+  "homepage": "http://www.dannydrinkwater.co.uk",
+  "description": "Grunt Project Template",
+  "contributors": [
+    {
+      "name": "Danny Drinkwater",
+      "email": "danny@dannydrinkwater.co.uk"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt":                  "0.4.2",
+    "grunt-newer":            "^1.1.0",
+    "grunt-contrib-less":     "~0.5.0",
+    "grunt-contrib-concat":   "~0.2.0",
+    "grunt-contrib-copy":     "^0.7.0",
+    "grunt-contrib-uglify":   "~0.2.0",
+    "grunt-contrib-watch":    "~0.3.1",
+    "grunt-contrib-cssmin":   "~0.6.1",
+    "grunt-contrib-imagemin": "^0.9.2",
+    "grunt-criticalcss":      "^0.6.0"
+  }
+}

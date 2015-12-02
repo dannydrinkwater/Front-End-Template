@@ -1,0 +1,819 @@
+// REM Font Size & Line Height
+
+.font-rhythm(@pxFontSize: @font-size-base, @pxLineHeight: @line-height-base){
+	@remFontSize: ~`parseInt("@{pxFontSize}", 10) / parseInt("@{rem-base}", 10)`;
+	font-size: @pxFontSize;
+	font-size: ~"@{remFontSize}rem";
+	@remLineHeight: ~`parseInt("@{pxLineHeight}", 10) / parseInt("@{rem-base}", 10)`;
+	line-height: @pxLineHeight;
+	line-height: ~"@{remLineHeight}rem";
+}
+
+.font-size(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	font-size: @pxValue;
+	font-size: ~"@{remValue}rem";
+}
+
+// REM Line Height
+.line-height(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	line-height: @pxValue;
+	line-height: ~"@{remValue}rem";
+}
+
+// REM Margins
+.margin(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	margin: @pxValue;
+	margin: ~"@{remValue}rem";
+	}
+
+	.margin(@pxVertical; @pxHorizontal){
+		@remVertical: ~`parseInt("@{pxVertical}", 10) / parseInt("@{rem-base}", 10)`;
+		@remHorizontal: ~`parseInt("@{pxHorizontal}", 10) / parseInt("@{rem-base}", 10)`;
+		margin: @pxVertical @pxHorizontal;
+		margin: ~"@{remVertical}rem @{remHorizontal}rem";
+		}
+		
+		.margin(@pxTop; @pxHorizontal; @pxBottom){
+			@remTop: ~`parseInt("@{pxTop}", 10) / parseInt("@{rem-base}", 10)`;
+			@remHorizontal: ~`parseInt("@{pxHorizontal}", 10) / parseInt("@{rem-base}", 10)`;
+			@remBottom: ~`parseInt("@{pxBottom}", 10) / parseInt("@{rem-base}", 10)`;
+			margin: @pxTop @pxHorizontal @pxBottom;
+			margin: ~"@{remTop}rem @{remHorizontal}rem @{remBottom}rem";
+			}
+	
+			.margin(@pxTop; @pxRight; @pxBottom; @pxLeft){
+				@remTop: ~`parseInt("@{pxTop}", 10) / parseInt("@{rem-base}", 10)`;
+				@remRight: ~`parseInt("@{pxRight}", 10) / parseInt("@{rem-base}", 10)`;
+				@remBottom: ~`parseInt("@{pxBottom}", 10) / parseInt("@{rem-base}", 10)`;
+				@remLeft: ~`parseInt("@{pxLeft}", 10) / parseInt("@{rem-base}", 10)`;
+				margin: @pxTop @pxRight @pxBottom @pxLeft;
+				margin: ~"@{remTop}rem @{remRight}rem @{remBottom}rem @{remLeft}rem";
+				}
+
+.margin-top(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	margin-top: @pxValue;
+	margin-top: ~"@{remValue}rem";
+}
+
+.margin-bottom(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	margin-bottom: @pxValue;
+	margin-bottom: ~"@{remValue}rem";
+}
+
+.margin-right(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	margin-right: @pxValue;
+	margin-right: ~"@{remValue}rem";
+}
+
+.margin-left(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	margin-left: @pxValue;
+	margin-left: ~"@{remValue}rem";
+}
+
+
+// REM Padding
+.padding(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	padding: @pxValue;
+	padding: ~"@{remValue}rem";
+	}
+
+	.padding(@pxVertical; @pxHorizontal){
+		@remVertical: ~`parseInt("@{pxVertical}", 10) / parseInt("@{rem-base}", 10)`;
+		@remHorizontal: ~`parseInt("@{pxHorizontal}", 10) / parseInt("@{rem-base}", 10)`;
+		padding: @pxVertical @pxHorizontal;
+		padding: ~"@{remVertical}rem @{remHorizontal}rem";
+		}
+		
+		.padding(@pxTop; @pxHorizontal; @pxBottom){
+			@remTop: ~`parseInt("@{pxTop}", 10) / parseInt("@{rem-base}", 10)`;
+			@remHorizontal: ~`parseInt("@{pxHorizontal}", 10) / parseInt("@{rem-base}", 10)`;
+			@remBottom: ~`parseInt("@{pxBottom}", 10) / parseInt("@{rem-base}", 10)`;
+			padding: @pxTop @pxHorizontal @pxBottom;
+			padding: ~"@{remTop}rem @{remHorizontal}rem @{remBottom}rem";
+			}
+		
+			.padding(@pxTop; @pxRight; @pxBottom; @pxLeft){
+				@remTop: ~`parseInt("@{pxTop}", 10) / parseInt("@{rem-base}", 10)`;
+				@remRight: ~`parseInt("@{pxRight}", 10) / parseInt("@{rem-base}", 10)`;
+				@remBottom: ~`parseInt("@{pxBottom}", 10) / parseInt("@{rem-base}", 10)`;
+				@remLeft: ~`parseInt("@{pxLeft}", 10) / parseInt("@{rem-base}", 10)`;
+				padding: @pxTop @pxRight @pxBottom @pxLeft;
+				padding: ~"@{remTop}rem @{remRight}rem @{remBottom}rem @{remLeft}rem";
+				}
+
+.padding-top(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	padding-top: @pxValue;
+	padding-top: ~"@{remValue}rem";
+}
+
+.padding-bottom(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	padding-bottom: @pxValue;
+	padding-bottom: ~"@{remValue}rem";
+}
+
+.padding-right(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	padding-right: @pxValue;
+	padding-right: ~"@{remValue}rem";
+}
+
+.padding-left(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	padding-left: @pxValue;
+	padding-left: ~"@{remValue}rem";
+}
+
+// REM Dimensions
+.height(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	height: @pxValue;
+	height: ~"@{remValue}rem";
+}
+
+.min-height(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	min-height: @pxValue;
+	min-height: ~"@{remValue}rem";
+}
+
+.max-height(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	max-height: @pxValue;
+	max-height: ~"@{remValue}rem";
+}
+
+.width(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	width: @pxValue;
+	width: ~"@{remValue}rem";
+}
+
+.max-width(@pxValue){
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	max-width: @pxValue;
+	max-width: ~"@{remValue}rem";
+}
+
+// REM Position
+
+.top(@pxValue) {
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	top: @pxValue;
+	top: ~"@{remValue}rem";
+}
+
+.right(@pxValue) {
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	right: @pxValue;
+	right: ~"@{remValue}rem";
+}
+
+.bottom(@pxValue) {
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	bottom: @pxValue;
+	bottom: ~"@{remValue}rem";
+}
+
+.left(@pxValue) {
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	left: @pxValue;
+	left: ~"@{remValue}rem";
+}
+
+// REM Border
+
+.border(@pxValue, @string) {
+	@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+	border: @pxValue @string;
+	border: ~"@{remValue}rem" @string;
+}
+
+	.border-top(@pxValue, @string) {
+		@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+		border-top: @pxValue @string;
+		border-top: ~"@{remValue}rem" @string;
+	}
+
+	.border-right(@pxValue, @string) {
+		@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+		border-right: @pxValue @string;
+		border-right: ~"@{remValue}rem" @string;
+	}
+
+	.border-bottom(@pxValue, @string) {
+		@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+		border-bottom: @pxValue @string;
+		border-bottom: ~"@{remValue}rem" @string;
+	}
+
+	.border-left(@pxValue, @string) {
+		@remValue: ~`parseInt("@{pxValue}", 10) / parseInt("@{rem-base}", 10)`;
+		border-left: @pxValue @string;
+		border-left: ~"@{remValue}rem" @string;
+	}
+
+// Grid System
+// -----------
+
+// Centered container element
+.container-fixed() {
+  margin-right: auto;
+  margin-left: auto;
+  .clearfix();
+}
+
+// Make a grid
+
+// Creates a wrapper for a series of columns
+.make-row() {
+  margin-left:  (@grid-gutter-width / -2);
+  margin-right: (@grid-gutter-width / -2);
+  // Then clear the floated columns
+  .clearfix();
+
+  // Negative margin nested rows out to align the content of columns
+  .row {
+	margin-left:  (@grid-gutter-width / -2);
+	margin-right: (@grid-gutter-width / -2);
+  }
+}
+// Generate the columns
+.make-column(@columns) {
+  @media (min-width: @grid-float-breakpoint) {
+	float: left;
+	// Calculate width based on number of columns available
+	width: percentage((@columns / @grid-columns));
+  }
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Set inner padding as gutters instead of margin
+  padding-left:	 (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+}
+// Generate the column offsets
+.make-column-offset(@columns) {
+  @media (min-width: @grid-float-breakpoint) {
+	margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-column-push(@columns) {
+  @media (min-width: @grid-float-breakpoint) {
+	left: percentage((@columns / @grid-columns));
+  }
+}
+.make-column-pull(@columns) {
+  @media (min-width: @grid-float-breakpoint) {
+	right: percentage((@columns / @grid-columns));
+  }
+}
+// Small, mobile-first columns
+.make-small-column(@columns) {
+  position: relative;
+  float: left;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Set inner padding as gutters instead of margin
+  padding-left:	 (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+}
+
+// The Grid
+.generate-grid-columns(@grid-columns) {
+
+  // Default columns
+  .col-span-X (@index) when (@index > 0) {
+	.col-span-@{index} { .col-span-(@index); }
+	.col-span-X((@index - 1));
+  }
+  .col-span-X(0) {}
+
+  // Offsets (gaps between columns)
+  .col-offset-X (@index) when (@index > 0) {
+	.col-offset-@{index} { .col-offset-(@index); }
+	.col-offset-X((@index - 1));
+  }
+  .col-offset-X (0) {}
+
+  // Source ordering
+  .col-push-X (@index) when (@index > 0) {
+	.col-push-@{index} { .col-push-(@index); }
+	.col-push-X((@index - 1));
+  }
+  .col-push-X (0) {}
+
+  // Source ordering
+  .col-pull-X (@index) when (@index > 0) {
+	.col-pull-@{index} { .col-pull-(@index); }
+	.col-pull-X((@index - 1));
+  }
+  .col-pull-X (0) {}
+
+  // Apply the styles
+  .col-span-(@columns) {
+	width: percentage((@columns / @grid-columns));
+  }
+  .col-offset-(@columns) {
+	margin-left: percentage((@columns / @grid-columns));
+  }
+  .col-push-(@columns) {
+	left: percentage((@columns / @grid-columns));
+  }
+  .col-pull-(@columns) {
+	right: percentage((@columns / @grid-columns));
+  }
+
+  // Generate .spanX and .offsetX
+  .col-span-X(@grid-columns);
+  .col-offset-X(@grid-columns);
+  .col-push-X(@grid-columns);
+  .col-pull-X(@grid-columns);
+}
+
+// Small device grid
+.generate-small-grid-columns(@grid-columns) {
+
+  // Deterimine the classes
+  .col-small-span-X (@index) when (@index > 0) {
+	.col-small-span-@{index} { .col-small-span-(@index); }
+	.col-small-span-X((@index - 1));
+  }
+  .col-small-span-X(0) {}
+
+  // Specify widths
+  .col-small-span-(@columns) {
+	width: percentage((@columns / @grid-columns));
+  }
+
+  // Generate the CSS
+  .col-small-span-X(@grid-columns);
+}
+
+// calculates a "fluid" (percentage) width (Ethan Marcotte: target / context = result method)
+.fluid-width(@target, @context) {
+	width: 100%*(@target/@context);
+	// ie correct formular to prevent
+	*width: (100%*(@target/@context))-@correction;
+}
+
+.fluid-marginright(@target, @context) {
+	margin-right: 100%*(@target/@context);
+	// ie correct formular to prevent
+	*margin-right: (100%*(@target/@context))-@correction;
+}
+
+.fluid-marginleft(@target, @context) {
+	margin-left: 100%*(@target/@context);
+	// ie correct formular to prevent
+	*margin-left: (100%*(@target/@context))-@correction;
+}
+
+.fluid-right(@target, @context) {
+	right: 100%*(@target/@context);
+	// ie correct formular to prevent
+	*right: (100%*(@target/@context))-@correction;
+}
+
+.fluid-left(@target, @context) {
+	left: 100%*(@target/@context);
+	// ie correct formular to prevent
+	*left: (100%*(@target/@context))-@correction;
+}
+
+// new image replacement see: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+.hide-text() {
+	text-indent: 150%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.hide-text-alt() {
+	border: 0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
+.display-inlineblock() {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+// RETURNS EVEN WIDTH ATTRIBUTE FOR ELM OF A COLLECTION THAT YOU'D LIKE TO FILL A CERTAIN SPACE
+// 1st arg: how many elmements you need to divide the space by. E.g: 5 nav li items
+// 2nd arg: the total percentage of the space containing space you want them to fill. E.g: 100% of the containing UL.
+.percentage-width(@totalItems: 5, @totalSpace: 100%) {
+	width: @totalSpace/@totalItems;
+	*width: (@totalSpace/@totalItems)-@correction;
+}
+
+.percentage-minwidth(@totalItems: 5, @totalSpace: 100%) {
+	min-width: @totalSpace/@totalItems;
+}
+
+.percentage-maxwidth(@totalItems: 5, @totalSpace: 100%) {
+	max-width: @totalSpace/@totalItems;
+}
+
+// produces the "..." on mobile and modern browsers
+.ellipsis(@ellipwidth: 100%) {
+	white-space: nowrap;
+	overflow: hidden;
+	width: @ellipwidth;
+	text-overflow: ellipsis;
+}
+
+// RGBA Backgrounds
+.rgba-bg(@colour, @alpha){
+	@alphaColour: hsla(hue(@colour), saturation(@colour), lightness(@colour), @alpha);
+	@ieAlphaColour: argb(@alphaColour);
+
+	@hex: ~`"@{colour}".replace('#','')`;
+
+	background: url("/images/transparent-png.php?hex=@{hex}&alpha=@{alpha}") 0 0 repeat; // Fallback for older browsers
+	background: @alphaColour;
+}
+
+.rgba-bg-nofilter(@colour, @alpha){
+	@alphaColour: hsla(hue(@colour), saturation(@colour), lightness(@colour), @alpha);
+	@ieAlphaColour: argb(@alphaColour);
+
+	background-color: @colour; // Fallback for older browsers
+	background-color: @alphaColour;
+
+}
+
+.at2x-bgimage(@path, @size: auto auto){
+	background-image: url(@path);
+	@at2x_path: ~`"@{path}".split('.').slice(0, "@{path}".split('.').length - 1).join(".") + "@2x" + "." + "@{path}".split('.')["@{path}".split('.').length - 1]`;
+
+	@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+		background-image: url(@at2x_path);
+		background-size: @size;
+	}
+}
+
+// reset button
+.reset-button() {
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+// For clearing floats
+.clearfix() {
+  *zoom: 1;
+  &:before,
+  &:after {
+	display: table;
+	content: "";
+  }
+  &:after {
+	clear: both;
+  }
+}
+
+// Accessible hide
+.accessible-hide() {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.ir() {
+	border: 0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	background-color: transparent;
+}
+
+.hidden() {
+	display: none !important;
+	visibility: hidden;
+}
+
+.visually-hidden() {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	&.focusable:active,
+	&.focusable:focus {
+	    clip: auto;
+	    height: auto;
+	    margin: 0;
+	    overflow: visible;
+	    position: static;
+	    width: auto;
+	}
+}
+
+.placeholder(@color: @input-color-placeholder) {
+	&:-moz-placeholder            { color: @color; } // Firefox 4-18
+	&::-moz-placeholder           { color: @color; } // Firefox 19+
+	&:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+	&::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+}
+
+// Border Radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+	 -moz-border-radius: @radius;
+		  border-radius: @radius;
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+	 -moz-box-shadow: @shadow;
+		  box-shadow: @shadow;
+}
+
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+	 -moz-transition: @transition;
+	  -ms-transition: @transition;
+	   -o-transition: @transition;
+		  transition: @transition;
+}
+
+.transition-duration(@time) {
+  -webkit-transition-duration: @time;
+	 -moz-transition-duration: @time;
+	  -ms-transition-duration: @time;
+	   -o-transition-duration: @time;
+		  transition-duration: @time;
+}
+
+.transition-property(@string) {
+  -webkit-transition-property: @string;
+	 -moz-transition-property: @string;
+	  -ms-transition-property: @string;
+	   -o-transition-property: @string;
+		  transition-property: @string;
+}
+
+// Transformations
+.transform(@string){
+  -webkit-transform: @string;
+	 -moz-transform: @string;
+	  -ms-transform: @string;
+		-o-transform: @string;
+		   transform: @string;
+}
+.rotate(@degrees) {
+  -webkit-transform: rotate(@degrees);
+	 -moz-transform: rotate(@degrees);
+	  -ms-transform: rotate(@degrees);
+	   -o-transform: rotate(@degrees);
+		  transform: rotate(@degrees);
+}
+.scale(@ratio) {
+  -webkit-transform: scale(@ratio);
+	 -moz-transform: scale(@ratio);
+	  -ms-transform: scale(@ratio);
+	   -o-transform: scale(@ratio);
+		  transform: scale(@ratio);
+}
+.translate(@x, @y) {
+  -webkit-transform: translate(@x, @y);
+	 -moz-transform: translate(@x, @y);
+	  -ms-transform: translate(@x, @y);
+	   -o-transform: translate(@x, @y);
+		  transform: translate(@x, @y);
+}
+.translateX(@x) {
+  -webkit-transform: translateX(@x);
+	 -moz-transform: translateX(@x);
+	  -ms-transform: translateX(@x);
+	   -o-transform: translateX(@x);
+		  transform: translateX(@x);
+}
+.translateY(@y) {
+  -webkit-transform: translateY(@y);
+	 -moz-transform: translateY(@y);
+	  -ms-transform: translateY(@y);
+	   -o-transform: translateY(@y);
+		  transform: translateY(@y);
+}
+.skew(@x, @y) {
+  -webkit-transform: skew(@x, @y);
+	 -moz-transform: skew(@x, @y);
+	  -ms-transform: skew(@x, @y);
+	   -o-transform: skew(@x, @y);
+		  transform: skew(@x, @y);
+}
+.translate3d(@x, @y, @z) {
+  -webkit-transform: translate3d(@x, @y, @z);
+	 -moz-transform: translate3d(@x, @y, @z);
+	  -ms-transform: translate3d(@x, @y, @z);
+	   -o-transform: translate3d(@x, @y, @z);
+		  transform: translate3d(@x, @y, @z);
+}
+.animation(@string){
+  -webkit-animation: @string;
+	 -moz-animation: @string;
+	  -ms-animation: @string;
+	   -o-animation: @string;
+		  animation: @string;
+}
+.animation-duration(@string){
+  -webkit-animation-duration: @string;
+	 -moz-animation-duration: @string;
+	  -ms-animation-duration: @string;
+	   -o-animation-duration: @string;
+		  animation-duration: @string;
+}
+.animation-delay(@delay) {
+    -webkit-animation-delay: @delay;
+       -moz-animation-delay: @delay;
+        -ms-animation-delay: @delay;
+         -o-animation-delay: @delay;
+            animation-delay: @delay;
+}
+.animation-fill(@fill) {
+	-webkit-animation-fill-mode: @fill;
+	   -moz-animation-fill-mode: @fill;
+	    -ms-animation-fill-mode: @fill;
+	     -o-animation-fill-mode: @fill;
+	        animation-fill-mode: @fill;
+}
+.animation-name(@name) {
+    -webkit-animation-name: @name;
+       -moz-animation-name: @name;
+         -o-animation-name: @name;
+            animation-name: @name;
+}
+
+// Backface visibility
+// Prevent browsers from flickering when using CSS 3D transforms.
+// Default value is `visible`, but can be changed to `hidden
+// See git pull https://github.com/dannykeane/bootstrap.git backface-visibility for examples
+.backface-visibility(@visibility){
+	-webkit-backface-visibility: @visibility;
+		-moz-backface-visibility: @visibility;
+		 -ms-backface-visibility: @visibility;
+			 backface-visibility: @visibility;
+}
+
+// Background clipping
+// Heads up: FF 3.6 and under need "padding" instead of "padding-box"
+.background-clip(@clip) {
+  -webkit-background-clip: @clip;
+	 -moz-background-clip: @clip;
+		  background-clip: @clip;
+}
+
+// Background sizing
+.background-size(@size){
+  -webkit-background-size: @size;
+	 -moz-background-size: @size;
+	   -o-background-size: @size;
+		  background-size: @size;
+}
+
+
+// Box sizing
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+	 -moz-box-sizing: @boxmodel;
+	  -ms-box-sizing: @boxmodel;
+		  box-sizing: @boxmodel;
+}
+
+// User select
+// For selecting text on the page
+.user-select(@select) {
+  -webkit-user-select: @select;
+	 -moz-user-select: @select;
+	  -ms-user-select: @select;
+	   -o-user-select: @select;
+		  user-select: @select;
+}
+
+// Resize anything
+.resizable(@direction) {
+  resize: @direction; // Options: horizontal, vertical, both
+  overflow: auto; // Safari fix
+}
+
+// CSS3 Content Columns
+.content-columns(@columnCount, @columnGap: @globalGutter) {
+  -webkit-column-count: @columnCount;
+	 -moz-column-count: @columnCount;
+		  column-count: @columnCount;
+  -webkit-column-gap: @columnGap;
+	 -moz-column-gap: @columnGap;
+		  column-gap: @columnGap;
+}
+
+.content-column-gap(@columnGap: @globalGutter) {
+  -webkit-column-gap: @columnGap !important;
+	 -moz-column-gap: @columnGap !important;
+		  column-gap: @columnGap !important;
+}
+.content-column-span(@columnSpan) {
+  -webkit-column-span: @columnSpan;
+	 -moz-column-span: @columnSpan;
+		  column-span: @columnSpan;
+}
+
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
+// Gradients
+#gradient {
+  .horizontal(@startColor: #555, @endColor: #333) {
+	background-color: @endColor;
+	background-image: -moz-linear-gradient(left, @startColor, @endColor); // FF 3.6+
+	background-image: -ms-linear-gradient(left, @startColor, @endColor); // IE10
+	background-image: -webkit-gradient(linear, 0 0, 100% 0, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+	background-image: -webkit-linear-gradient(left, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+	background-image: -o-linear-gradient(left, @startColor, @endColor); // Opera 11.10
+	background-image: linear-gradient(left, @startColor, @endColor); // Le standard
+	background-repeat: repeat-x;
+	//filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@startColor,@endColor)); // IE9 and down
+  }
+  .vertical(@startColor: #555, @endColor: #333, @startColorStop: 0%, @endColorStop: 100%) {
+	background-color: @endColor;
+	background-image: -moz-linear-gradient(top, @startColor @startColorStop, @endColor @endColorStop); // FF 3.6+
+	background-image: -ms-linear-gradient(top, @startColor @startColorStop, @endColor @endColorStop); // IE10
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor, @startColorStop), to(@endColor, @endColorStop)); // Safari 4+, Chrome 2+
+	background-image: -webkit-linear-gradient(top, @startColor @startColorStop, @endColor @endColorStop); // Safari 5.1+, Chrome 10+
+	background-image: -o-linear-gradient(top, @startColor @startColorStop, @endColor @endColorStop); // Opera 11.10
+	background-image: linear-gradient(top, @startColor @startColorStop, @endColor @endColorStop); // The standard
+	background-repeat: repeat-x;
+	//filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down
+
+	// SVG gradients for IE9
+	.ie9 & {
+		@ieFromColor: ~`"@{startColor}".replace('#','')`;
+		@ieToColor: ~`"@{endColor}".replace('#','')`;
+		@ieFromStop: ~`"@{startColorStop}".replace('%','')`;
+		@ieToStop: ~`"@{endColorStop}".replace('%','')`;
+		 background-image: url('/images/css/gradient-vertical.php?from=@{ieFromColor}&fromStop=@{ieFromStop}&to=@{ieToColor}&toStop=@{ieToStop}'); // IE9
+	}
+  }
+  .directional(@startColor: #555, @endColor: #333, @deg: 45deg) {
+	background-color: @endColor;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(@deg, @startColor, @endColor); // FF 3.6+
+	background-image: -ms-linear-gradient(@deg, @startColor, @endColor); // IE10
+	background-image: -webkit-linear-gradient(@deg, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+	background-image: -o-linear-gradient(@deg, @startColor, @endColor); // Opera 11.10
+	background-image: linear-gradient(@deg, @startColor, @endColor); // The standard
+  }
+  .vertical-three-colors(@startColor: #00b3ee, @midColor: #7a43b6, @colorStop: 50%, @endColor: #c3325f) {
+	background-color: mix(@midColor, @endColor, 80%);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), color-stop(@colorStop, @midColor), to(@endColor));
+	background-image: -webkit-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+	background-image: -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
+	background-image: -ms-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+	background-image: -o-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+	background-image: linear-gradient(@startColor, @midColor @colorStop, @endColor);
+	background-repeat: no-repeat;
+  }
+  .radial(@innerColor: #555, @outerColor: #333)	 {
+	background-color: @outerColor;
+	background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(@innerColor), to(@outerColor));
+	background-image: -webkit-radial-gradient(circle, @innerColor, @outerColor);
+	background-image: -moz-radial-gradient(circle, @innerColor, @outerColor);
+	background-image: -ms-radial-gradient(circle, @innerColor, @outerColor);
+	background-image: -o-radial-gradient(circle, @innerColor, @outerColor);
+	background-repeat: no-repeat;
+  }
+  .striped(@color, @angle: -45deg) {
+	background-color: @color;
+	background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
+	background-image: -webkit-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  }
+}
+// Reset filters for IE
+.reset-filter() {
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
+}
