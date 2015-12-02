@@ -101,7 +101,7 @@ module.exports = function(grunt) {
 		criticalcss: {
 			custom: {
 				options: {
-					url: "index.html",
+					url: "fullyFormedURLToRunAgainst.html",
 					width: 1200,
 					height: 900,
 					outputfile: "public/css/critical.css",
@@ -114,11 +114,21 @@ module.exports = function(grunt) {
 	});
 
 	/* ----------------------------------------------------------------------
+	 * Load NPM Tasks
+	 * ---------------------------------------------------------------------- */
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-criticalcss');
+
+	/* ----------------------------------------------------------------------
 	 * Watch task
 	 * ---------------------------------------------------------------------- */
 	grunt.registerTask('watch', [], function () {
-		grunt.loadNpmTasks('grunt-contrib-watch');
-
 		grunt.task.run('watch');
 	});
 
@@ -126,33 +136,20 @@ module.exports = function(grunt) {
 	 * Default
 	 * ---------------------------------------------------------------------- */
 	grunt.registerTask('default', [], function () {
-		grunt.loadNpmTasks('grunt-contrib-copy');
-		grunt.loadNpmTasks('grunt-contrib-concat');
-		grunt.loadNpmTasks('grunt-contrib-uglify');
-		grunt.loadNpmTasks('grunt-contrib-less');
-		grunt.loadNpmTasks('grunt-contrib-cssmin');
-
 		grunt.task.run('copy', 'concat', 'uglify', 'less', 'cssmin');
 	});
 
 	/* ----------------------------------------------------------------------
 	 * ImageMin - Minifies and copies images to public
 	 * ---------------------------------------------------------------------- */
-	grunt.registerTask('imagemin', [], function () {
-		grunt.loadNpmTasks('grunt-newer');
-		grunt.loadNpmTasks('grunt-contrib-imagemin');
-
-		grunt.task.run('newer:imagemin');
+	grunt.registerTask('images', [], function () {
+		grunt.task.run('imagemin');
 	});
 
 	/* ----------------------------------------------------------------------
 	 * Critical - Generates critical CSS file
 	 * ---------------------------------------------------------------------- */
 	grunt.registerTask('critical', [], function () {
-		grunt.loadNpmTasks('grunt-contrib-less');
-		grunt.loadNpmTasks('grunt-contrib-cssmin');
-		grunt.loadNpmTasks('grunt-criticalcss');
-
 		grunt.task.run('less', 'cssmin', 'criticalcss');
 	});
 };

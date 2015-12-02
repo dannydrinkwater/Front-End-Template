@@ -29,7 +29,7 @@ To have Grunt watch files for changes during development, run:
 
 ## Public
 
-Ensure that your Apache/nginx webroot points to this directory.
+Ensure that your server webroot points to this directory.
 
 A sample `robots.txt` file is also included for convenience.
 
