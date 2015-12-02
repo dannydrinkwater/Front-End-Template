@@ -23,7 +23,7 @@ Finally, build the solution:
 
 This will create a new project with any required Grunt dependencies, followed by any Front End dependencies (plugins etc) and then run an initial build of the projects assets.
 
-To have Grunt watch files for changes when developing, run:
+To have Grunt watch files for changes during development, run:
 
 `grunt watch`
 
