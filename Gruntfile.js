@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 					{
 						expand: true,
 						flatten: true,
-						cwd: 'bower_components/',
+						cwd: 'vendor/bower_components/',
 						src: [
 							'jquery/dist/jquery.min.js',
 							'html5shiv/dist/html5shiv.min.js',
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 					{
 						expand: true,
 						flatten: true,
-						src: 'bower_components/entypo/font/*.{svg,ttf,eot,woff}',
+						src: 'vendor/bower_components/entypo/font/*.{svg,ttf,eot,woff}',
 						dest: 'public/css/'
 					}
 				]
