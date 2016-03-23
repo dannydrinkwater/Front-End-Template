@@ -128,7 +128,7 @@ module.exports = function(grunt) {
 	/* ----------------------------------------------------------------------
 	 * Watch task
 	 * ---------------------------------------------------------------------- */
-	grunt.registerTask('watch', [], function () {
+	grunt.registerTask('watcher', [], function () {
 		grunt.task.run('watch');
 	});
 
