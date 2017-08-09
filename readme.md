@@ -68,3 +68,25 @@ Defines the default Bower dependencies.
 ### package.json
 
 Defines the dependecies required by Grunt for the tasks outlined above.
+
+## Recommended further plugins
+
+### Picturefill
+
+For adding responsive image support.
+https://github.com/scottjehl/picturefill
+
+### Unveil
+
+For adding lazy loaded images.
+https://github.com/luis-almeida/unveil
+
+### Responsive tables
+
+A responsive table solution from Zurb.
+http://zurb.com/playground/responsive-tables
+
+### Owl Carousel
+
+A fully featured carousel/slider solution.
+https://github.com/OwlCarousel2/OwlCarousel2
