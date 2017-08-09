@@ -8,7 +8,7 @@ Create a new directory
 
 Open a terminal window, navigate to the new directory and run:
 
-`git clone https://github.com/dannydrinkwater/Project-Template.git .`
+`git clone https://github.com/dannydrinkwater/Front-End-Template.git .`
 
 Install Grunt modules:
 
