@@ -1,5 +1,6 @@
 # Front End Responsive Template
 
+A Grunt, Bower and LESS fueled responsive Front-End template.
 
 ## Getting Started
 
