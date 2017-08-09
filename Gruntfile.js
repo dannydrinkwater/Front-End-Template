@@ -16,9 +16,7 @@ module.exports = function(grunt) {
 						flatten: true,
 						cwd: 'vendor/bower_components/',
 						src: [
-							'jquery/dist/jquery.min.js',
-							'html5shiv/dist/html5shiv.min.js',
-							'respond-minmax/dest/respond.min.js'
+							'jquery/dist/jquery.min.js'
 						],
 						dest: 'public/js/vendor/'
 					}
